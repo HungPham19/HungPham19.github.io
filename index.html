@@ -230,5 +230,20 @@
             event.stopPropagation()
         })
     </script>
+    <script>
+        var header =document.getElementById('header');
+        var  mobieMenu=document.getElementById('mobile-menu');
+        var headerHeight =header.clientHeight;
+mobieMenu.oneclick = function()
+{ var isClosed =header.clientHeight ===headerHeight;
+    var isClosed =(header.clientHeight===46)
+    if(isClosed){
+        header.style.height='auto';
+    }else{
+        header.style.height='46px';
+
+    }
+}     
+    </script>
 </body>
 </html>
